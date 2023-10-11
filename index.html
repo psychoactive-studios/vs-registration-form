@@ -76,6 +76,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Counsell
 
   // Call the function whenever the content changes (e.g., after loading new content)
   sendHeightToParent();
+ window.parent.document.getElementById('contentFrame').style.height = document.body.scrollHeight + 'px';
 </script>
 
 <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
