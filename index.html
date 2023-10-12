@@ -479,7 +479,7 @@ div.form-header-group.hasImage {
 /*PREFERENCES STYLE*/ 
 .form-all { max-width: 752px; width: 100%; font-size: 16px; box-shadow: none !important; background-image: none; position: relative;  color: #2C3345; font-size: 1rem; max-width: none; border-radius: 0px; margin: 0px; background-color: #FFFFFF; } 
 
-body { font-family: Gibson, sans-serif !important; background-color: #fffdfa; }
+body { font-family: Gibson, sans-serif !important; background-color: #fff; overflow-x: hidden;}
 
 .form-buttons-wrapper { margin: 0px; padding: 1rem 0px 0px; border-top: none; }
 
@@ -516,24 +516,36 @@ ul { margin-block-start: 0px; margin-block-end: 0px; margin-inline-start: 0px; m
 .supernova { background-image: none; } 
 
 #stage { background-image: none; }
-/*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/ /* Injected CSS Code */
-</style>
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 0.5vw; /* Controls the overall width of the scrollbar */
+    padding: 10px; /* Controls the padding of the Scrollbar */
+}
+  
+/* Track - This is the part that contains the bit you click and drag */
+::-webkit-scrollbar-track {
+		background: #000000; /* Sets the background to transparent, change to a Hex or RGB value if you would like */
+}
 
-/*__INSPECT_SEPERATOR__*/
+/* Handle - This is the bit you actually click and drag */
+::-webkit-scrollbar-thumb {
+     background: #ffc72f; /* Change the Hex value to change the scroll handle */
+     border-radius: 0px;
+  }
 
-    /* Injected CSS Code */
+#input_2 {
+	font-weight: 600;
+/* 	margin-bottom: 2rem; */
+}
+
+.form-all {
+	box-shadow: unset!important;
+}
 </style>
 
 <form class="jotform-form" action="https://submit.jotform.com/submit/230498015052854" method="post" enctype="multipart/form-data" name="form_230498015052854" id="230498015052854" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="230498015052854" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
   <div role="main" class="form-all">
     <ul class="form-section page-section">
-      <li id="cid_1" class="form-input-wide" data-type="control_head">
-        <div class="form-header-group  header-large">
-          <div class="header-text httal htvam">
-            <h1 id="header_1" class="form-header" data-component="header">Counsellor Application Form</h1>
-          </div>
-        </div>
-      </li>
       <li class="form-line" data-type="control_text" id="id_32">
         <div id="cid_32" class="form-input-wide" data-layout="full">
           <div id="text_32" class="form-html" data-component="text" tabindex="0">
